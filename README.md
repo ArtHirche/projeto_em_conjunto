@@ -1,32 +1,42 @@
-# Simple Web Project
+# Feliz Aniversário João 🎉
 
-This project is a simple web application that features a sidebar navigation with sections for "infância", "adolescência", and "atual". The application is designed with a predominantly blue color scheme and includes icons for each section.
+Este projeto é um site comemorativo de feliz aniversário para João! O site apresenta uma navegação lateral estilizada, com sessões especiais sobre a infância, adolescência, fase atual e uma área dedicada aos amigos, além de pequenas surpresas.
 
-## Project Structure
+simple-web-project
+
+## Estrutura do Projeto
 
 ```
-simple-web-project
+projeto_em_conjunto
 ├── assets
 │   ├── css
-│   │   └── style.css        # Contains styles for the project
+│   │   └── style.css        # Estilos do site
 │   ├── js
-│   │   └── script.js        # Contains JavaScript for interactive features
+│   │   └── script.js        # Funcionalidades interativas
 │   └── icons
-│       ├── infancia.svg     # Icon for "infância"
-│       ├── adolescencia.svg # Icon for "adolescência"
-│       └── atual.svg       # Icon for "atual"
-├── index.html               # Main HTML document
-└── README.md                # Project documentation
+│       ├── infancia.svg     # Ícone da infância
+│       ├── adolescencia.svg # Ícone da adolescência
+│       └── atual.svg        # Ícone da fase atual
+├── index.html               # Página principal
+└── README.md                # Documentação
 ```
 
-## Features
+## Funcionalidades
 
-- Sidebar navigation with links to different sections of the page.
-- Smooth scrolling effect when navigating between sections.
-- Responsive design with a clean layout.
+- Navegação lateral (sidebar) com links para as sessões: Infância, Adolescência, Atual e Amigos.
+- Área de amigos interativa, onde cada amigo tem sua própria "aba".
+- Efeito de rolagem suave ao navegar entre as sessões.
+- Modo escuro (darkmode) ativável.
+- Design responsivo e moderno, com predominância de tons de azul.
+- Ícones personalizados para cada fase.
+- Surpresa especial no canto inferior direito do site!
 
-## Setup Instructions
+## Como visualizar
 
-1. Clone the repository to your local machine.
-2. Open `index.html` in your web browser to view the project.
-3. Modify the CSS and JavaScript files as needed to customize the design and functionality.
+1. Baixe ou clone este repositório na sua máquina.
+2. Abra o arquivo `index.html` em seu navegador para acessar o site de aniversário.
+3. Sinta-se à vontade para personalizar estilos, textos e funcionalidades para deixar a homenagem ainda mais especial!
+
+---
+
+Feito com carinho para João. Feliz aniversário! 🥳
