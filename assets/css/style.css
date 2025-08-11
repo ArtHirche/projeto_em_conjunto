@@ -1,3 +1,296 @@
-* {
-    display: flex;
+.amigos-folder {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 24px;
+  margin-bottom: 18px;
+  max-width: 220px;
+}
+
+.amigo-btn {
+  background: #f3e6ff;
+  color: #650894;
+  border: 1px solid #c24ff7;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.amigo-btn:hover,
+.amigo-btn.active {
+  background: #c24ff7;
+  color: #fff;
+}
+
+.amigo-content {
+  background: #f3e6ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(101, 8, 148, 0.07);
+  padding: 18px 22px;
+  margin: 16px 0 16px 24px;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  display: none;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.amigo-content.active {
+  display: block !important;
+}
+
+.amigo-content h3 {
+  margin-top: 0;
+  color: #650894;
+}
+
+.amigo-content p {
+  margin-bottom: 0;
+}
+
+.darkmode .amigos-folder .amigo-btn {
+  background: #2a2040;
+  color: #c24ff7;
+  border-color: #c24ff7;
+}
+
+.darkmode .amigos-folder .amigo-btn:hover,
+.darkmode .amigos-folder .amigo-btn.active {
+  background: #c24ff7;
+  color: #fff;
+}
+
+.darkmode .amigo-content {
+  background: #2a2040;
+  color: #e0e0e0;
+}
+
+.darkmode .amigo-content h3 {
+  color: #c24ff7;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
+  /* Light blue background */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #650894;
+  /* Darker blue for sidebar */
+  color: white;
+  position: fixed;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.sidebar a:hover {
+  background-color: #005f8d;
+  /* Darker blue on hover */
+}
+
+.sidebar img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  z-index: 1100;
+}
+
+.sidebar-toggle .bar {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebar.collapsed a span {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-toggle {
+  right: 10px;
+}
+
+.sidebar.collapsed a:first-of-type {
+  margin-top: 56px;
+}
+
+.darkmode-toggle {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  transition: color 0.3s;
+}
+
+body.darkmode {
+  background-color: #181c25;
+  color: #e0e0e0;
+}
+
+.darkmode .sidebar {
+  background-color: #232a3a;
+  color: #e0e0e0;
+}
+
+.darkmode .sidebar a {
+  color: #e0e0e0;
+}
+
+.darkmode .sidebar a:hover {
+  background-color: #1a2233;
+}
+
+.darkmode .sidebar-toggle .bar {
+  background-color: #e0e0e0;
+}
+
+.darkmode .darkmode-toggle {
+  color: #ffd600;
+}
+
+.darkmode .content h2 {
+  color: #c24ff7;
+}
+
+.content {
+  margin-left: 270px;
+  transition: margin-left 0.3s;
+  padding: 40px 32px 32px 32px;
+}
+
+.content h2,
+.content p {
+  margin-left: 24px;
+}
+
+.amigos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.amigo {
+  background: #f3e6ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(101, 8, 148, 0.07);
+  padding: 18px 22px;
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 180px;
+}
+
+.amigo h3 {
+  margin-top: 0;
+  color: #650894;
+}
+
+.amigo p {
+  margin-bottom: 0;
+}
+
+.darkmode .amigo {
+  background: #2a2040;
+  color: #e0e0e0;
+}
+
+.darkmode .amigo h3 {
+  color: #c24ff7;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 70px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sidebar:not(.collapsed) a span {
+    display: none;
+  }
+
+  .sidebar.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sidebar.collapsed .sidebar-toggle {
+    right: 0;
+  }
+
+  .content,
+  .sidebar.collapsed ~ .content {
+    margin-left: 0;
+    padding: 24px 8px 8px 8px;
+  }
+
+  .content h2,
+  .content p {
+    margin-left: 0;
+  }
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 70px;
 }

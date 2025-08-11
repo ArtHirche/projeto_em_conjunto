@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Aniversuario</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>test</title>
-</head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <button
+        class="sidebar-toggle"
+        id="sidebarToggle"
+        aria-label="Toggle sidebar"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <a href="#infancia">
+        <img src="./assets/icons/adolescencia.svg" alt="Infância" />
+        <span>Infância</span>
+      </a>
+      <a href="#adolescencia">
+        <img src="./assets/icons/infancia.svg" alt="Adolescência" />
+        <span>Adolescência</span>
+      </a>
+      <a href="#atual">
+        <img src="./assets/icons/atual.svg" alt="Atual" />
+        <span>Atual</span>
+      </a>
+      <button
+        class="darkmode-toggle"
+        id="darkmodeToggle"
+        aria-label="Alternar modo escuro/claro"
+      >
+        <span id="darkmodeIcon">🌙</span>
+      </button>
+    </div>
 
-<body>
+    <div class="content">
+      <section id="infancia">
+        <h2>Infância</h2>
+        <p>Content related to infância goes here.</p>
+      </section>
+      <section id="adolescencia">
+        <h2>Adolescência</h2>
+        <p>Content related to adolescência goes here.</p>
+      </section>
+      <section id="atual">
+        <h2>Atual</h2>
+        <p>Content related to atual goes here.</p>
+      </section>
 
-    <script src="./assets/js/script.js"></script>
-</body>
+      <section id="amigos">
+        <h2>Amigos</h2>
+        <div class="amigos-folder">
+          <button class="amigo-btn" data-amigo="art">Art</button>
+          <button class="amigo-btn" data-amigo="erik">Erik</button>
+          <button class="amigo-btn" data-amigo="gabe">Gabe</button>
+          <button class="amigo-btn" data-amigo="mound">Mound</button>
+          <button class="amigo-btn" data-amigo="yamato">Yamato</button>
+        </div>
+        <div class="amigo-content" id="amigo-art" style="display: none">
+          <button class="amigo-close" aria-label="Fechar">×</button>
+          <h3>Art</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            dolorem quos ad debitis incidunt, quam ratione, dolores
+            exercitationem, fugiat deleniti consectetur pariatur soluta. Facere
+            aliquid nulla velit cumque ipsum voluptas corporis odio maiores quae
+            omnis consequatur ab adipisci commodi quibusdam maxime provident,
+            enim ut, quas eum ad cupiditate culpa ratione!
+          </p>
+        </div>
+        <div class="amigo-content" id="amigo-erik" style="display: none">
+          <button class="amigo-close" aria-label="Fechar">×</button>
+          <h3>Erik</h3>
+          <p>Conteúdo sobre Erik.</p>
+        </div>
+        <div class="amigo-content" id="amigo-gabe" style="display: none">
+          <button class="amigo-close" aria-label="Fechar">×</button>
+          <h3>Gabe</h3>
+          <p>Conteúdo sobre Gabe.</p>
+        </div>
+        <div class="amigo-content" id="amigo-mound" style="display: none">
+          <button class="amigo-close" aria-label="Fechar">×</button>
+          <h3>Mound</h3>
+          <p>Conteúdo sobre Mound.</p>
+        </div>
+        <div class="amigo-content" id="amigo-yamato" style="display: none">
+          <button class="amigo-close" aria-label="Fechar">×</button>
+          <h3>Yamato</h3>
+          <p>Conteúdo sobre Yamato.</p>
+        </div>
+      </section>
+    </div>
 
+  <a href="https://youtu.be/dQw4w9WgXcQ" id="surpresa-link" target="_blank" rel="noopener" style="position:fixed; bottom:12px; right:16px; color:#650894; font-size:0.85rem; text-decoration:underline; cursor:pointer; opacity:0.7; z-index:3000;">surpresa</a>
+  <script src="./assets/js/script.js"></script>
+  </body>
 </html>
