@@ -7,6 +7,24 @@
   max-width: 220px;
 }
 
+.buta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.amigo-close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: large;
+}
+
+.darkmode .amigo-close {
+  color: #fff;
+}
+
 .amigo-btn {
   background: #f3e6ff;
   color: #650894;
@@ -27,7 +45,7 @@
 .amigo-content {
   background: #f3e6ff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(101, 8, 148, 0.07);
+  box-shadow: 0 4px 8px rgba(101, 8, 148, 0.3);
   padding: 18px 22px;
   margin: 16px 0 16px 24px;
   width: auto;
@@ -63,7 +81,7 @@
   color: #fff;
 }
 
-.darkmode .amigo-content {
+.darkmode .amigo-content{
   background: #2a2040;
   color: #e0e0e0;
 }
@@ -109,7 +127,7 @@ body {
 
 .sidebar a:hover {
   /* width: 42%; */
-  background-color: #005f8d;
+  background-color: rgba(48, 0, 59, 0.596);
   /* Darker blue on hover */
 }
 
