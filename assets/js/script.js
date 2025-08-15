@@ -1,3 +1,32 @@
+  const playArtBtn = document.getElementById('play-art-sound');
+  let audioArt = null;
+  if (playArtBtn) {
+    playArtBtn.addEventListener('click', function () {
+      if (!audioArt) {
+        audioArt = document.createElement('audio');
+        audioArt.id = 'audio-art';
+        audioArt.src = './assets/sounds/HINO DO PALMEIRAS.mp3';
+        document.body.appendChild(audioArt);
+      }
+      if (audioArt.paused) {
+        audioArt.currentTime = 0;
+        audioArt.play();
+        playArtBtn.innerHTML = '⏹️ Parar<br><span style="font-size:0.8em; color:#fff; opacity:0.7;"></span>';
+      } else {
+        audioArt.pause();
+        playArtBtn.innerHTML = '▶️ Tocar Hino<br><span style="font-size:0.8em; color:#fff; opacity:0.7;"></span>';
+      }
+    });
+    if (!audioArt) {
+      audioArt = document.createElement('audio');
+      audioArt.id = 'audio-art';
+      audioArt.src = './assets/sounds/HINO DO PALMEIRAS.mp3';
+      document.body.appendChild(audioArt);
+    }
+    audioArt.addEventListener('ended', function () {
+      playArtBtn.innerHTML = '▶️ Tocar Hino<br><span style="font-size:0.8em; color:#fff; opacity:0.7;">assets/sounds/HINO DO PALMEIRAS.mp3</span>';
+    });
+  }
 // filepath: simple-web-project/assets/js/script.js
 document.addEventListener("DOMContentLoaded", function () {
   // Sidebar toggle logic
