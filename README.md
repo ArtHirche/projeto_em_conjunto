@@ -1,42 +1,60 @@
-# Feliz Aniversário João 🎉
+# Projeto: Aniversário
 
-Este projeto é um site comemorativo de feliz aniversário para João! O site apresenta uma navegação lateral estilizada, com sessões especiais sobre a infância, adolescência, fase atual e uma área dedicada aos amigos, além de pequenas surpresas.
-
-simple-web-project
-
-## Estrutura do Projeto
-
-```
-projeto_em_conjunto
-├── assets
-│   ├── css
-│   │   └── style.css        # Estilos do site
-│   ├── js
-│   │   └── script.js        # Funcionalidades interativas
-│   └── icons
-│       ├── infancia.svg     # Ícone da infância
-│       ├── adolescencia.svg # Ícone da adolescência
-│       └── atual.svg        # Ícone da fase atual
-├── index.html               # Página principal
-└── README.md                # Documentação
-```
+Este projeto é uma página comemorativa de aniversário, feita para homenagear um amigo especial. O site apresenta seções sobre diferentes fases da vida (Infância, Adolescência, Atual) e uma área dedicada aos amigos, com mensagens personalizadas, imagens, vídeos e até um áudio.
 
 ## Funcionalidades
 
-- Navegação lateral (sidebar) com links para as sessões: Infância, Adolescência, Atual e Amigos.
-- Área de amigos interativa, onde cada amigo tem sua própria "aba".
-- Efeito de rolagem suave ao navegar entre as sessões.
-- Modo escuro (darkmode) ativável.
-- Design responsivo e moderno, com predominância de tons de azul.
-- Ícones personalizados para cada fase.
-- Surpresa especial no canto inferior direito do site!
+- Sidebar interativa com navegação suave entre seções
+- Modo escuro/claro
+- Seção de amigos com mensagens, imagens, vídeo do YouTube e áudio personalizado
+- Layout responsivo e visual moderno
 
-## Como visualizar
+## Estrutura
 
-1. Baixe ou clone este repositório na sua máquina.
-2. Abra o arquivo `index.html` em seu navegador para acessar o site de aniversário.
-3. Sinta-se à vontade para personalizar estilos, textos e funcionalidades para deixar a homenagem ainda mais especial!
+```
+index.html
+README.md
+assets/
+	css/
+		style.css
+	icons/
+		adolescencia.svg
+		atual.svg
+		infancia.svg
+	images/
+		art.png
+		mound.jpg
+		yamato.jpg
+		atual/
+			image.png
+			image2.png
+			image3.png
+		infancia/
+			inf1.jpg
+			inf2.png
+			...
+	js/
+		script.js
+	sounds/
+		HINO DO PALMEIRAS.mp3
+	video/
+		JOGADORES_DE_FUTEBOL_DANDO_PARABENS_cr7_neymar_messi_pele_maradona__futebol_campo_chuteira_bola_gol360P (1).mp4
+```
+
+## Como usar
+
+1. Abra o arquivo `index.html` em seu navegador.
+2. Navegue pelas seções usando a barra lateral.
+3. Explore as mensagens dos amigos e interaja com os botões para ver imagens, vídeos e ouvir o áudio especial.
+
+## Créditos
+
+- Feito por amigos para João
+- Ícones e imagens: acervo pessoal
+- Áudio: Hino do Palmeiras
 
 ---
+
+Feliz aniversário, João! 🎉
 
 Feito com carinho para João. Feliz aniversário! 🥳
